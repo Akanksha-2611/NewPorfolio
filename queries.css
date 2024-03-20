@@ -1,0 +1,73 @@
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+        float: right;
+        margin-left: 55%;
+        margin-top: 30px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar{
+        position:relative;
+        left:-100%;
+        top:0px;
+        gap:0;
+        flex-direction: column;
+        /* background-color: #262626; */
+        width:100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .navbar.active{
+        left:0;
+    }
+
+    /* --------home------------ */
+    .home h1{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 0px;
+        margin-right: 4rem;
+        font-family: 'Dancing Script', cursive;
+    }
+    .home h2{
+        font-size: 2rem;
+        margin-right:4rem;
+        margin-top: 10px;
+        color: rgb(49, 1, 39);
+    }
+    .bt{
+      color:aliceblue;
+      margin-top: 10px;
+      margin-right: 4rem;
+      
+      padding: 10px 20px;
+      text-decoration:none ;
+      border-radius: 10px;
+      font-size: 0.8rem;
+  }
+  .bt:hover{
+      background: rgb(75, 73, 75) ;
+  }
+  #project{
+    padding: 30px 35px;
+    margin-top: 41rem;
+}
+#project .sub-title{
+    margin-top: 10rem;
+    font-size: 2rem;
+}
+
+}
+
+
+
+
